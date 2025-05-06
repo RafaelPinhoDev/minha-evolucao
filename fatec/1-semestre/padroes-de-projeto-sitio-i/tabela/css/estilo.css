@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+
+/* Estruturas HTML semântico */
+html{
+	background-color: gray;
+}
+
+body{
+	background-color:#A9D9D4;
+	width: 980px;
+	margin: 0px auto;
+}
+
+article, section, aside {
+	background-color: #A9D9D4;
+	
+}
+
+header{
+	background-color: #0C0D0A;
+	padding: 20px;
+	color: #ffffff;
+
+}
+
+
+#barra_de_navegacao{
+	color: #ffffff;
+	background-color: #1E2615;
+	padding: 10px;
+	font-size: 1.1em;
+}
+
+/* Coloca o menu de navegação na horizontal */
+li, a {
+	display: inline;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* Coloca efeito quando passa o mouse por cima do elemento */
+a:hover{
+	background-color: #A9D9D4;
+	color: #0C0D0A;
+}
+
+footer{
+	background-color: #0C0D0A;
+	color: #ffffff;
+	padding: 20px;
+
+	
+}
+
+/* Formatação Textos */
+h1,h2,h3,h4, th, a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p, small, td{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: justify;
+}
+
+h1{
+	font-size: 2em;
+	text-align: center;
+}
+
+h2{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+h3 {font-size: 1.3em;}
+h1{text-transform: uppercase;}
+h2{ text-transform: capitalize;}
+
+#linktree, small{
+	font-size: 0.8em;
+}
