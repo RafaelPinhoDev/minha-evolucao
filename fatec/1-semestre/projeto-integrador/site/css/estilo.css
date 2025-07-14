@@ -1,0 +1,930 @@
+@charset "UTF-8";
+/*------------------------------------------*/
+/*-----CSS PADRAO PARA TODAS AS PAGINAS-----*/
+/*------------------------------------------*/
+
+/* Reset básico para remover margens/paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+} 
+
+/*determina o tamanho minimo do body como toda a tela, para criar um "fundo" onde o footer poderá se alocar*/
+body { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*determina o tamanho do body para a altura da tela do usuário, no mínimo, assim nunca fica sobrando tela abaixo do footer*/
+}
+
+header{
+    display: flex;
+    justify-content: space-between;  /* Distribui os itens igualmente */
+    align-items: center;            /* Centraliza verticalmente */
+    padding: 10px 20px;
+    background-color: #2BB1FF;
+}
+
+figcaption {text-align: center;}
+
+/* Coloca a navbar na horizontal */
+.paginas, li, a{
+    display: flex;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    list-style: none;
+    gap: 25px;
+
+}
+
+.paginas a:link {
+    color: #27658a; /****************verificar as cores dos links da navbar******************/
+}
+
+.paginas a:visited {
+    color: #27658a;
+}
+
+.paginas a:hover {
+    color: #27658a;
+    font-size: 1.3em;
+}
+
+.paginas a:active {
+    color: #27658a;
+}
+
+.paginas a.paginasAtivo {
+    color: #A7DFFF; /****************verificar as cores dos links da navbar******************/
+    font-size: 1.4em;
+}
+
+/* Alinha a chave pix ao lado do qr code */
+.pix{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.pix figcaption{
+    text-align: left;
+    font-family: "Bree Serif", serif;
+}
+
+
+main{  
+    margin: 4%;
+    flex-grow: 1; /*dtermmina que o main deverá crescer proporcionalmente ao tamanho total do espaço entre o header e o footer*/
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;  /* Distribui os itens igualmente */
+    align-items: center;            /* Centraliza verticalmente */
+    padding: 10px 20px;
+    background-color: #FFD500;
+    flex-shrink: 0; /*determina que o footer não deverá encolher na mudança de tamanho da tela e distribuição de outros elementos*/
+}
+
+.textoDireitos {
+    margin: 0 15px;               
+    text-align: center;
+    font-size: 0.9em;
+    flex-grow: 1;  /* Ocupa espaço disponível no centro */
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.redesSociais{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+}
+
+.redesSociais a{
+    color: black;
+    font-family: "Bree Serif", serif;
+}
+
+
+.instagram{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+}
+
+/* Deixa todos os H1 maíusculos */
+
+
+
+.menuNavegacao {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  } 
+
+
+
+p {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.logo img{
+    border-radius: 50%;
+}
+
+/*------------------------------------------*/
+/*-----CSS PADRAO PARA TODAS AS PAGINAS-----*/
+/*------------------------------------------*/
+
+
+/*---------------------------*/
+/*-------Página Autores------*/
+/*---------------------------*/
+
+
+.autoresImg{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.autoresImg figcaption a{
+    display: block;
+    text-align: center;
+    border: 2px black solid;
+    background-color: #2BB1FF;
+    padding: 5%;
+    margin: 0px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.autoresImg figcaption a:hover{background: #27658a;}
+
+
+/*---------------------------*/
+/*-------Página Autores------*/
+/*---------------------------*/
+
+/*------------------------*/
+/*----Página Cada Autor---*/
+/* ---------------------- */
+
+.cadaAutor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadaAutor figure{
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+}
+
+.cadaAutor article{
+    flex-flow: column wrap;
+    flex: 3 1 450px;
+}
+
+
+.cadaAutorInformacao h3{
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.cadaAutorInformacao p a{
+    margin-left: 0;
+    color: inherit;
+}
+
+/*------------------------*/
+/*----Página Cada Autor---*/
+/*------------------------*/
+
+/*-------------------------------*/
+/*----Página Cada Autor Rafael---*/
+/*-------------------------------*/
+
+.cadaAutorRafael{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadaAutorRafael figure{
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+}
+
+.cadaAutorRafael article{
+    flex-flow: column wrap;
+    flex: 3 1 450px;
+}
+
+
+.cadaAutorRafaelInformacao h3{
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.cadaAutorRafaelInformacao p a{
+    margin-left: 0;
+    color: inherit;
+}
+
+.cadaAutorRafaelTecnologias h3 {
+    text-align: center;
+    font-family: "Rancho", cursive;
+    font-size: 1.5em;
+    margin-bottom: 2%;
+    
+}
+
+.cadaAutorRafaelTecnologiasImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 4%;
+}
+
+.cadaAutorRafaelTecnologiasImg figcaption{
+    font-family: "Montserrat Alternates", sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/*---------------------------------*/
+/*----Página Cada Autor Rafael---*/
+/*-------------------------------*/
+
+/*------------------------*/
+/*------Página Adoção-----*/
+/*------------------------*/
+
+
+.adocaoMain { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Alinha o article*/
+.adocaoConteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*Organiza as sections com o h2 e o parágrafo*/
+.adocaoConteudoTexto {
+    margin: 3%;
+    padding: 1%;
+    width: 20%;
+}
+
+.adocaoConteudoTexto h2 {
+    text-align: left;
+    margin: 5%;
+    margin-left: 0%;
+}
+
+.conteudoAdocaoBotao {
+    width: 600px;
+}
+
+.adocaoAnimaisDisponiveis {
+    border: 2px black solid;
+    background-color: #2BB1FF;
+    margin: 0px;
+    width: 600px;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+}
+
+a:link.adocaoAnimaisDisponiveis {
+    color: #000;
+}
+
+a:visited.adocaoAnimaisDisponiveis {
+    color: #000;
+}
+
+a:hover.adocaoAnimaisDisponiveis {
+    color: #000;
+    background-color: #27658a;
+}
+
+a:active.adocaoAnimaisDisponiveis {
+    color: #000;
+}
+/*------------------------*/
+/*------Página Adoção-----*/
+/*------------------------*/
+
+/*-------------------------*/
+/*-----página Contato------*/
+/*-------------------------*/
+
+.contatoArticle{ 
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.contatoMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contatoLabel {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background-color: #84D3FF; /* Escolha a cor desejada */
+    padding: 5px; /* Adiciona um espaçamento interno para melhor aparência */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+input {
+    background-color: #84D3FF;
+    border: 2px solid #84D3FF;
+}
+.contatoButton {background-color: #27658a;
+    border: 2px solid #27658a;
+    width: 60px;}
+
+.contatoInput {
+    width: 500px; /* Define uma largura maior */
+    height: 30px; /* Aumenta a altura */
+    padding: 10px; /* Adiciona espaço interno para um visual melhor */
+}
+
+textarea { /*corrigir camelCase*/
+    width: 500px;
+    height: 100px;
+    background-color: #84D3FF;
+    border: 2px solid #84D3FF;
+}
+
+.contatoEnviar {
+    background-color: #27658a;
+    border: 2px solid #27658a;
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    color: #ffffff;
+    font-family: "Rancho", cursive;
+
+}
+
+.contatoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.contatoSectionPerguntas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contatoArticle h2 { margin: 0px;}
+
+.contatoSectionPerguntas details summary {
+    background-color: #5abe4d;
+    padding: 2%;
+    max-width: 400px;
+    border-radius: 11px;
+    border-bottom: 2px solid #282828;
+}
+.contatoP {
+    background-color: #93E289;
+    max-width: 400px;
+    padding: 2%;}
+
+summary  {
+  font-family: "Edu VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.contatoH2 { 
+    text-transform: uppercase; 
+    font-size: 30px;
+    font-family: "Rancho", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 4%;
+    margin-top: 2%;}
+/*-------------------------*/
+/*-----Página Contato------*/
+/*-------------------------*/
+
+/*-------------------------*/
+/*-----Página Eventos------*/
+/*-------------------------*/
+
+.eventosConteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.eventosArticle{ 
+    order: 1;
+}
+
+.eventosTable {
+    width: 1000px; /* ou qualquer valor em px, %, etc. */
+    height: 480px;
+    margin: 0 auto; /* centraliza horizontalmente */
+    border-collapse: collapse;
+    text-align: center;
+    border: solid 2px hwb(0 0% 100%);
+}
+
+
+
+.eventosTh {
+    background-color: #2F93CD;
+    font-size: 1.2em;
+    padding:  20px;
+   
+}
+
+.eventosTr, .eventosTd {
+    border: solid 2px hwb(0 0% 100%);
+    padding: 3px;
+    color: hwb(0 0% 100%);
+}
+
+
+.palavra1 {color: #ffffff;}
+
+
+.eventosTd { font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;}
+
+.eventosPalavras {  font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+  } 
+
+
+.eventosAside{
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    justify-self: center;
+    margin-left: 4%;
+}
+
+.eventosAside img{
+    padding-bottom: 20px;
+}
+
+    
+/*-------------------------*/
+/*-----Página Eventos------*/
+/*-------------------------*/
+
+/*-------------------------------*/
+/*--Pagina Voluntário Inscrição--*/
+/*-------------------------------*/
+
+.sejaUmVoluntarioMain {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sejaUmVoluntarioArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 8px;
+    min-width: 200px;
+}
+
+.sejaUmVoluntarioForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.sejaUmVoluntarioFormSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sejaUmVoluntarioLabel {
+    background-color: #84D3FF; /* Escolha a cor desejada */
+    padding: 5px; /* Adiciona um espaçamento interno para melhor aparência */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+.sejaUmVoluntarioInput {
+    background-color: #84D3FF;
+    border: 2px solid #84D3FF;}
+
+.sejaUmVoluntarioSelect {
+    background-color: #A7DFFF; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    border: 2px solid #000000; /* Borda personalizada */
+    width: 300px; /* Define uma largura maior */
+    height: 40px; /* Aumenta a altura */
+    padding-left: 40px;
+}
+
+.sejaUmVoluntarioInput {
+    width: 500px; /* Define uma largura maior */
+    height: 30px; /* Aumenta a altura */
+    padding: 10px; /* Adiciona espaço interno para um visual melhor */
+}
+
+.sejaUmVoluntarioFormButton {
+    background-color: #27658a;
+    border: 2px solid #27658a;
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    color: #ffffff;
+    font-family: "Rancho", cursive;
+}
+
+.sejaUmVoluntarioFormSection {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/*-------------------------------*/
+/*--Pagina Voluntário Inscrição--*/
+/*-------------------------------*/
+
+/*---------------------------*/
+/*-----Pagina Voluntário-----*/
+/*---------------------------*/
+
+.voluntarioMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+}
+
+.voluntario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+}
+
+.voluntarioArticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.voluntarioColunaEsquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+}
+
+.voluntarioColunaDireita {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 35%;
+}
+
+.voluntarioA {
+    color: #000;
+    border: 2px black solid;
+    background-color: #2BB1FF;
+    padding: 2%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.voluntarioA:hover { 
+    background-color: #27658a;
+}
+
+/*---------------------------*/
+/*-----Pagina Voluntário-----*/
+/*---------------------------*/
+
+/*--------------------------*/
+/*-------Pagina Sobre-------*/
+/*--------------------------*/
+
+.sobreArticle {
+    margin: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sobreArticleSection {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.sobreArticleSection h2{
+    margin-bottom: 5%;
+}
+
+/*--------------------------*/
+/*-------Pagina Sobre-------*/
+/*--------------------------*/
+
+/*-------------------------*/
+/*-----Página Cada Pet-----*/
+/*-------------------------*/
+
+.cadaPetMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cadaPetArticle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cadaPetDescricao { width: 15%; }
+
+.cadaPetAdotar{
+    border: 2px black solid;
+    background-color: #2BB1FF;
+    margin: 0px;
+    padding: 2%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 10px;
+    text-transform: uppercase;
+}
+
+.cadaPetAnterior, .cadaPetProximo {
+    border: 2px black solid;
+    background-color: #2BB1FF;
+    margin: 0px;
+    padding: 2%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 10px;
+    text-transform: uppercase;
+}
+
+a:link.cadaPetAdotar {
+    color: #000;
+}
+
+a:visited.cadaPetAdotar {
+    color: #000;
+}
+
+a:hover.cadaPetAdotar {
+    color: #000;
+    background-color: #27658a;
+}
+
+a:active.cadaPetAdotar {
+    color: #000;
+}
+
+a:link.cadaPetAnterior {
+    color: #000;
+}
+
+a:visited.cadaPetAnterior {
+    color: #000;
+}
+
+a:hover.cadaPetAnterior {
+    color: #000;
+    background-color: #27658a;
+}
+
+a:active.cadaPetAnterior {
+    color: #000;
+}
+
+a:link.cadaPetProximo {
+    color: #000;
+}
+
+a:visited.cadaPetProximo {
+    color: #000;
+}
+
+a:hover.cadaPetProximo {
+    color: #000;
+    background-color: #27658a;
+}
+
+a:active.cadaPetProximo {
+    color: #000;
+}
+
+.cadaPetSelect {
+    width: 40%;
+}
+
+.cadaPetAside {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cadaPetAside a{
+    padding: 4%;
+}
+
+/*------------------------*/
+/*----Página Cada Pet---*/
+/*------------------------*/
+
+
+
+/* COnfigurações H1 */
+
+h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase; 
+    font-size: 30px;
+    font-family: "Rancho", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 4%;
+    margin-top: 2%;
+
+}
+
+main{
+    padding: 0px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+
+
+/*-------------------------------*/
+/*----Página Cada Autor Thaísa---*/
+/*------------------------------*/
+
+.cadaAutorThaisaAside {display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.cadaAutorThaisaAside img { 
+    border-bottom: 3px solid #282828;
+    border-top: 3px solid #282828;
+    border-left: 3px solid #282828;
+    border-right: 3px solid #282828;
+}
+
+.cadaAutorThaisaH2 {
+    font-size: 20px;
+    font-family: "Rancho", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+/*-------------------------------*/
+/*----Página Cada Autor Thaísa---*/
+/*-------------------------------*/
+
+/*-------------------------------*/
+/*----Página Cada Autor Samuel---*/
+/*-------------------------------*/
+
+.cadaAutorSamuelArticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Rancho", cursive;
+}
+
+.cadaAutorSamuelInformacao{
+    width: 25%;
+}
+
+.cadaAutorSamuelInformacao a{
+    color: #000000;
+}
+
+.cadaAutorSamuelAside {
+    text-align: center;
+}
+
+.cadaAutorSamuelSectionImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cadaAutorSamuelAside{
+    padding: 2% ;
+    font-family: "Rancho", cursive;
+
+}
+
+.cadaAutorSamuelSectionImg{
+    padding-top: 1% ;
+}
+
+.cadaAutorSamuelInformacao p a{
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 1em;
+}
+
+
+.cadaAutorSamuelNomeRa{
+    margin-bottom: 50%;
+}
+
+.cadaAutorSamuelPaginasH3{
+    margin-top: 30%;
+    margin-bottom: 1%;
+}
+
+
+
+/*-------------------------------*/
+/*----Página Cada Autor Samuel---*/
+/*-------------------------------*/
