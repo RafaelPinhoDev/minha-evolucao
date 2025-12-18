@@ -1,9 +1,9 @@
-# Projeto Integrador — Site para ONG 
+# Projeto Integrador — Site para ONG
 
 Este projeto foi desenvolvido como atividade final do 1º semestre do curso de **Sistemas para Internet** na **FATEC Dr. Bernardino de Campos**, unindo as disciplinas:
 
-- 💻 Padrões de Projeto de Sítios na Internet  
-- 📝 Leitura e Produção de Textos  
+- 💻 Padrões de Projeto de Sítios na Internet
+- 📝 Leitura e Produção de Textos
 - 🎨 Design Digital
 
 ## 💡 Sobre o Projeto
@@ -14,21 +14,23 @@ A ONG escolhida foi a **Sociedade Protetora dos Animais de São Roque**, que rea
 
 O site foi pensado com foco em:
 
-- Visibilidade e credibilidade para a ONG  
-- Facilidade na navegação e usabilidade  
+- Visibilidade e credibilidade para a ONG
+- Facilidade na navegação e usabilidade
 - Design acessível e responsivo
 
 ## 👨‍💻 Equipe
 
-- **Rafael Pinho**  
-- **Samuel Modesto Nunes**  
+- **Rafael Pinho**
+- **Samuel Modesto Nunes**
 - **Thaisa Vitória Fernandes Silvério**
 
 ## 🚀 Tecnologias Utilizadas
 
-- HTML5  
-- CSS3  
+- HTML5
+- CSS3
 - Figma (protótipo de layout)
+
+## 🔗 Link do Site: https://rafaelpinhodev.github.io/sociedade-protetora-dos-animais/
 
 ## 📌 Status
 
