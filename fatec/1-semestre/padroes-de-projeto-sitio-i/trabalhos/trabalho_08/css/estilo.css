@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+
+/* Reseta as configurações do navegador */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Menu Navegação */
+
+.menu_navegacao_header {
+    background-color: black;
+    padding: 15px;
+    margin: 0 auto 0 auto;
+}
+
+.menu_navegacao_header ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+
+/* Links */
+.menu_navegacao_header a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.links_footer h4 {
+    font-size: 1.5em;
+}
+
+.menu_navegacao_footer {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_navegacao_footer ul {
+    list-style: none;
+}
+
+
+.menu_navegacao_footer a {
+    text-decoration: none;
+    font-size: 1em;
+    /* list-style: none; */
+}
+
+/* Imagem do cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estruturas */
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    display: flex;
+    flex: 2 1 200px;
+    /* Grow - Shrink Basis */
+    flex-direction: column;
+    padding: 2%;
+    margin: 10px;
+}
+
+aside {
+    display: flex;
+    flex: 1 1 200px;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+    margin-right: 10px;
+}
+
+.personagens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 40px 20px;
+}
+
+
+figure {
+    text-align: center;
+}
+
+/* 
+aside, section, article{
+    border: darkblue 2px dashed;
+} */
+
+/* Fontes */
+
+h1,
+h2,
+h3,
+h4,
+li,
+label,
+input {
+    font-family: "PT Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p,
+small,
+figcaption {
+    font-family: "Neuton", 'Times New Roman', Times, serif;
+}
+
+/* Tamanho Fontes */
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 15px 0px 5px 0px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+article small {
+    font-size: 1.0em;
+    margin: 10px 0;
+}
+
+article p {
+    text-align: left;
+}
+
+figcaption {
+    font-size: 1em;
+}
+
+.forms label {
+    font-size: 1em;
+}
+
+.forms input {
+    font-size: 1em;
+}
+
+.campo {
+    padding: 15px auto;
+}
+
+.botao {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+/* Posicionamento containers do footer */
+
+.links_footer {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 15px;
+}
+
+.menu_navegacao_footer ul {
+    margin-top: 25px;
+}
+
+.menu_navegacao_footer li {
+    justify-self: center;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.redes_sociais {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email_logo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.email_logo figure {
+    margin-bottom: 20px;
+}
+
+header,
+footer {
+    background-color: #051326;
+}
+
+footer p,
+header p,
+footer h4,
+footer a {
+    color: #979DA6;
+}
+
+.autor {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+    padding: 10px 15px;
+}
+
+.autor a {
+    text-decoration: none;
+    color: black;
+}
+
+.personagens {
+    background-color: #cbced3;
+}
+
+article,
+aside {
+    background-color: #cbced3;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+figcaption {
+    font-size: 1.2em;
+}

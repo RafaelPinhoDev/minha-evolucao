@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 07 - Formulário</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Fonte -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Exemplo 01 - Select List </h2>
+            <p>No primeiro já tem um tamanho definido dos campos e é exibido todos de uma só vez para o usuário</p>
+            <br><br>
+            <form id="SelectList">
+                <p>
+                    <legend>Qual o seu Filósofo favorito?</legend>
+                    <label>Selecione um Filósofo:</label> <br>
+                    <select name="filosofo" id="filosofo" size="5">
+                        <option value="Platao">Platão</option>
+                        <option value="Socrates">Sócrates</option>
+                        <option value="Nietzsche">Nietzsche</option>
+                        <option value="SunTzu">Sun Tzu</option>
+                        <option value="MarcoAurelio">Marco Aurélio</option>
+                    </select>
+                </p>
+            </form>
+            <br><br><br>
+            <h2>Exemplo 02 - Dropdown</h2>
+            <p>No segundo a lista fica suspensa e não é mostrada nenhuma opção para o usuário até que ele clique nela</p>
+            <br><br>
+            <form id="Dropdown">
+                <p>
+                    <legend>Qual sua banda de Rock favorita?</legend>
+                    <label>Selecione uma banda:</label> <br>
+                    <select id="banda" name="banda">
+                        <option value="" selected disabled hidden>Selecione uma banda</option>
+                        <option value="LinkinPark">Linkin Park</option>
+                        <option value="Slipknot">Slipknot</option>
+                        <option value="BonJovi">Bon Jovi</option>
+                        <option value="LegiaoUrbana">Legião Urbana</option>
+                    </select>
+                </p>
+            </form>
+        </article>
+    </main>
+    <footer>
+            <small>&copy; <a href="https://www.linkedin.com/in/rafaelsouzapinho/" target="_blank">Rafael Souza de Pinho</a></small>
+    </footer>
+
+</body>
+</html>

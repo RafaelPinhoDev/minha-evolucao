@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+
+
+
+/* CSS da Tabela dos Livros */
+
+#Livros{background-color: #ffffff;
+		border-collapse: collapse;
+		
+}
+
+
+#Livros table, #Livros tr, #Livros td  {
+	border: solid 2px #000000;
+	padding:  5px;
+	color:#000000;
+
+}
+
+#Livros th{
+	background-color: #000000;
+	color:#ffffff;
+	
+}
+
+/* Tabela 2 do INSS */
+
+#INSS {
+	border: solid, 3px #000000;
+	color: #000000;
+	background-color: #ffffff;
+	border-collapse: collapse;
+	margin: 0 auto 0 auto;
+}
+
+#INSS th, #INSS td{
+	color: #000000; 
+	border: solid, 3px #000000;
+	padding: 5px;
+	
+}
+
+#INSS .recolhimento{
+	text-align: center;
+}
+
+#INSS .cabecalho, #INSS th {
+	
+	background-color:#02DE4A;
+}
+
+#INSS .cabecalho b{
+	color: #e92525	;
+	
+}
+
+	
+	

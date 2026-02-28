@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Aula de Tabela</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/tabela.css">
+</head>
+<body>
+	<article>
+	<h1> 15 Livros Para Ler Antes de Morrer </h1>
+
+		<table>
+			<tr> 
+				<th> Livro </th>
+				<th> Autor </th>
+				<th> Data de Publicação </th>
+				<th> Motivo </th>
+			</tr>
+			<tr>
+				<td> Os Miseráveis </td>
+				<td> Victor Hugo </td>
+				<td> 1862 </td>
+			</tr>
+		</table>
+	</article>
+
+</body>

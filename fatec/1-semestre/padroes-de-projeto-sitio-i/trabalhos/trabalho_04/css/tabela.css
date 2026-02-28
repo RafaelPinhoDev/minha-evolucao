@@ -7,9 +7,6 @@
 
 #Livros{background-color: #ffffff;
 		border-collapse: collapse;
-		padding: auto 10px;
-		width: 940px;
-		margin: 20px;
 		
 }
 
@@ -34,7 +31,7 @@
 	color: #000000;
 	background-color: #ffffff;
 	border-collapse: collapse;
-	margin: 0 auto 15px auto;
+	margin: 0 auto 0 auto;
 }
 
 #INSS th, #INSS td{

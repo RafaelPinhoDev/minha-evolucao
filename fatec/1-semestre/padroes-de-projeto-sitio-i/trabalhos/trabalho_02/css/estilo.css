@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+html {background-color: lightgray;}
+body {background-color: white;}
+hearder, article, section {background-color: lightblue;}
+nav, aside, footer {background-color: lightpink;}
+header,nav,article, aside, section, footer {border: dashed 1px blue;}
+
