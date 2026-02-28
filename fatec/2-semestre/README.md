@@ -9,7 +9,6 @@ Este repositório contém os materiais, projetos e anotações desenvolvidos dur
 - **Redes e Internet**
 - **Estrutura de Dados**
 - **Matemática Discreta**
-- **Padrões de Projeto de Sítio Internet II**
 - **Práticas de Design**
 - **Legislação Aplicada a Internet**
 
