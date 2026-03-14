@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Desconto</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+  <main>
+    <div class="conteudo">
+
+      <a href="../index.html" class="voltar">← Voltar</a>
+
+      <h1>Calculadora de <span>Desconto</span></h1>
+      <p class="descricao">Informe o preço e o percentual de desconto.</p>
+
+      <label>Preço Original (R$)</label>
+      <input id="preco" type="number" placeholder="Ex: 200" />
+
+      <label>Desconto (%)</label>
+      <input id="desconto" type="number" placeholder="Ex: 15" />
+
+      <div id="resultado" class="resultado">
+        O resultado aparecerá aqui
+      </div>
+
+      <button onclick="calcularDesconto()">Calcular</button>
+      <button onclick="limparCampos()">Limpar Campos</button>
+
+
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Rafael Pinho</p>
+  </footer>
+
+  
+</body>
+
+</html>

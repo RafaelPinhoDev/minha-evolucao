@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Média</title>
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main>
+    <div class="conteudo">
+
+      <a href="../index.html" class="voltar">← Voltar</a>
+
+      <h1>
+        Calculadora de
+        <span>Média</span>
+      </h1>
+      <p class="descricao">Digite as três notas para calcular a situação do aluno.</p>
+
+      <label>Nota 1</label>
+      <input id="nota1" type="number" placeholder="0 a 10" />
+
+      <label>Nota 2</label>
+      <input id="nota2" type="number" placeholder="0 a 10" />
+
+      <label>Nota 3</label>
+      <input id="nota3" type="number" placeholder="0 a 10" />
+
+      <div id="resultado" class="resultado">
+        O resultado aparecerá aqui
+      </div>
+
+      <button onclick="calcularMedia()">Calcular Média</button>
+      <button onclick="limparCampos()">Limpar Campos</button>
+      
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Rafael Pinho</p>
+  </footer>
+</body>
+
+</html>
