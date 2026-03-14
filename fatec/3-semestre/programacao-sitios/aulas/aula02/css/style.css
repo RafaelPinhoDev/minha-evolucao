@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#lista-nomes{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#lista-nomes p{
+    background-color: aquamarine;
+    padding: 8px;
+    border: 1px solid black;
+}

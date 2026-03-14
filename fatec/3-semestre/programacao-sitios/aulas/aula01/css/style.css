@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Variável CSS - declaração */
+:root{
+    --bg-color: pink;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    gap: 16px;
+    /* Chama a variável */
+    background-color: var(--bg-color);
+
+}
+
+
+
