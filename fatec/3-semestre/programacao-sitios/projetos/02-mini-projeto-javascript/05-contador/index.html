@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contador</title>
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <a href="../index.html">← Voltar</a>
+
+    <h1>Contador</h1>
+    <p>Informe o início, fim e o salto para gerar a contagem.</p>
+
+    <div class="campo">
+      <label>Início</label>
+      <input id="inicio" type="number" placeholder="Ex: 1"/>
+    </div>
+
+    <div class="campo">
+      <label>Fim</label>
+      <input id="fim" type="number" placeholder="Ex: 20"/>
+    </div>
+
+    <div class="campo">
+      <label>Salto</label>
+      <input id="salto" type="number" placeholder="Ex: 2"/>
+    </div>
+
+    <button onclick="gerarContagem()">Gerar Contagem</button>
+
+    <div class="resultado">
+      <p class="resultado-titulo">Resultado</p>
+      <ul id="lista">
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="../index.html">← Voltar</a>
+
+      <h1>Tabuada</h1>
+      <p>Informe um número para gerar sua tabuada completa.</p>
+
+      <div class="campo">
+        <label>Número</label>
+        <input id="numero" type="number" placeholder="Ex: 7" />
+      </div>
+
+      <button onclick="gerarTabuada()">Gerar Tabuada</button>
+
+      <div class="resultado">
+        <p class="resultado-titulo">Resultado</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Expressão</th>
+              <th>Resultado</th>
+            </tr>
+          </thead>
+          <tbody id="tabela">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
