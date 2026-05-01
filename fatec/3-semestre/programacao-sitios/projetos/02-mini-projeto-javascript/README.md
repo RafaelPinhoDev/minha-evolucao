@@ -1,97 +1,89 @@
-# Mini Projeto JavaScript 2
+# 🚀 Mini Projeto JavaScript 2
 
 ## Estruturas de Repetição
 
-Conjunto de 4 mini projetos práticos para exercitar os fundamentos de **JavaScript**.
+Conjunto de 4 mini projetos práticos desenvolvidos para exercitar os fundamentos de **JavaScript**, com foco em estruturas de repetição.
 
-## Objetivo
+## 📌 Objetivo
 
-Projeto com exercícios práticos para aprender estruturas de repetição em JavaScript puro (`for` e `while`).
+Este projeto tem como objetivo aplicar, na prática, o uso de loops (`for` e `while`) em JavaScript puro, manipulando elementos do DOM e gerando conteúdos dinâmicos.
 
 ---
 
 ## 🟡 05 — Contador
 
-**O que fazer:**
-Criar o arquivo `script.js` com uma função que lê os valores de início, fim e salto,
-e usa um loop `for` para gerar a contagem, criando um `<li>` para cada número dentro da lista.
+### ✔️ O que foi desenvolvido
 
-**Passos:**
+Foi criada uma funcionalidade de contagem dinâmica, onde o usuário informa valores de início, fim e salto. A partir desses dados, um loop `for` gera uma lista de números exibidos na tela.
 
-1. Adicionar `id` nos três inputs e na `<ul>` do HTML
-2. Referenciar o `script.js` no HTML com `<script src="script.js">`
-3. Criar o `script.js` com a função e conectá-la ao botão
-4. Dentro da função, pegar os valores dos inputs
-5. Limpar o conteúdo da lista antes de gerar a nova
-6. Criar o loop: `for (let i = inicio; i <= fim; i += salto)`
-7. Dentro do loop, adicionar um `<li>` com o número atual
+Durante o desenvolvimento:
+- Foram adicionados `id`s aos inputs e à lista (`<ul>`) no HTML  
+- O arquivo `script.js` foi integrado ao projeto  
+- Os valores dos inputs são capturados via JavaScript  
+- A lista é limpa antes de cada nova execução  
+- Um loop percorre os valores e cria elementos `<li>` dinamicamente  
 
-**Conceitos praticados:**
+### 💡 Conceitos aplicados
 
-- `for` com início, fim e passo personalizados
-- Criação dinâmica de elementos com `innerHTML +=`
-- Limpar resultado anterior antes de gerar novo
+- Estrutura de repetição `for` com parâmetros personalizados  
+- Manipulação do DOM com `innerHTML`  
+- Atualização dinâmica de listas  
 
 ---
 
 ## 🟡 06 — Tabuada
 
-**O que fazer:**
-Criar o arquivo `script.js` com uma função que lê um número e usa um loop `for`
-para gerar sua tabuada de 1 a 10, criando uma linha `<tr>` na tabela para cada multiplicação.
+### ✔️ O que foi desenvolvido
 
-**Passos:**
+Foi implementada uma funcionalidade que gera a tabuada de um número informado pelo usuário, exibindo os resultados em formato de tabela.
 
-1. Adicionar `id` no input e no `<tbody>` da tabela no HTML
-2. Referenciar o `script.js` no HTML com `<script src="script.js">`
-3. Criar o `script.js` com a função e conectá-la ao botão
-4. Dentro da função, pegar o valor do input
-5. Limpar o `<tbody>` antes de gerar as novas linhas
-6. Criar o loop de 1 a 10
-7. Para cada iteração, montar uma `<tr>` com a expressão e o resultado
+Durante o desenvolvimento:
+- Foram definidos `id`s no input e no `<tbody>` da tabela  
+- O JavaScript captura o valor informado  
+- O conteúdo da tabela é resetado antes de cada execução  
+- Um loop de 1 a 10 gera as multiplicações  
+- Cada resultado é inserido como uma nova linha `<tr>` na tabela  
 
-**Conceitos praticados:**
+### 💡 Conceitos aplicados
 
-- `for` com intervalo fixo
-- Construção de tabela HTML dinamicamente
-- Concatenação de strings para montar tags HTML
+- Loop `for` com intervalo fixo  
+- Criação dinâmica de tabelas HTML  
+- Manipulação de strings para construção de elementos  
 
 ---
 
 ## 🟡 07 — Simulador de Financiamento
 
-**O que fazer:**
-Criar o arquivo `script.js` com uma função que lê os dados do financiamento e usa um loop
-para simular mês a mês com juros compostos, gerando uma linha `<tr>` para cada mês.
+### ✔️ O que foi desenvolvido
 
-**Por que o loop é obrigatório aqui?**
-Os juros incidem sobre o saldo devedor restante — cada mês depende do resultado
-do mês anterior. Sem o loop não é possível calcular.
+Foi desenvolvido um simulador de financiamento que calcula, mês a mês, a evolução de um saldo devedor com base em juros compostos.
 
-**Passos:**
+Durante o desenvolvimento:
+- Foram adicionados `id`s aos inputs e ao `<tbody>` da tabela  
+- Os dados do financiamento são capturados via JavaScript  
+- A tabela é limpa antes de cada simulação  
+- Um loop percorre cada mês do financiamento  
+- Para cada iteração, são calculados:  
+  - Juros do mês  
+  - Total pago no mês  
+  - Novo saldo devedor  
+- Os resultados são exibidos em uma tabela dinâmica  
+- Os valores são formatados com `toFixed(2)`  
 
-1. Adicionar `id` nos quatro inputs e no `<tbody>` da tabela no HTML
-2. Referenciar o `script.js` no HTML com `<script src="script.js">`
-3. Criar o `script.js` com a função e conectá-la ao botão
-4. Dentro da função, pegar os quatro valores dos inputs
-5. Limpar o `<tbody>` antes de gerar as novas linhas
-6. Criar o loop do mês 1 até o número de parcelas
-7. Para cada mês calcular:
-   - **Juros do Mês** = saldoDevedor × taxa
-   - **Total do Mês** = parcela + jurosMes
-   - **Saldo Devedor** = saldoDevedor + jurosMes − parcela
-8. Montar a `<tr>` com cinco `<td>` e adicionar ao `<tbody>`
-9. Atualizar o saldo devedor ao final de cada iteração
+### 💡 Conceitos aplicados
 
-**Conceitos praticados:**
-
-- `for` com lógica acumulativa
-- Juros compostos na prática
-- Tabela com múltiplas colunas gerada dinamicamente
-- `toFixed(2)` para formatação de valores monetários
+- Loop `for` com lógica acumulativa  
+- Aplicação prática de juros compostos  
+- Manipulação de tabelas com múltiplas colunas  
+- Formatação de números  
 
 ---
 
-## Importante
+## ⚠️ Observações
 
-O material do HTML e CSS ja vieram prontos, sendo necessário apenas a criação das classes CSS e adição dos IDs no HTML para a manipulação do JavaScript.
+O HTML e o CSS base foram previamente disponibilizados.  
+O desenvolvimento concentrou-se na:
+
+- Adição de `id`s para integração com o JavaScript  
+- Implementação da lógica em `script.js`  
+- Manipulação dinâmica dos elementos da página  

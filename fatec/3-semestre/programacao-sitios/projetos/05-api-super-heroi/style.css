@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: #b90000;
+    padding: 0.6em;
+}
+
+.containter {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center; /* Centraliza o input, label e botão */
+    font-family: sans-serif;
+    flex: 1;
+}
+
+
+.busca-heroi {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.pesquisar {
+    padding: 10px 20px;
+    background-color: #e62429; /* Vermelho estilo Marvel */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+.card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.card:hover {
+    transform: translateY(-10px); /* O card sobe 10px */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
+    border-color: #b90000; /* A borda fica vermelha igual ao seu header/footer */
+}
+
+
+.card:hover img {
+    filter: brightness(1.1);
+    transition: 0.3s;
+}
+
+
+.card:hover h3 {
+    color: #b90000;
+    transition: 0.3s;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #222;
+    font-size: 1.4rem;
+}
+
+.card p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: #b90000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
